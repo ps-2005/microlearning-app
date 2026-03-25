@@ -17,7 +17,7 @@ def query_openrouter(prompt: str) -> str:
     }
 
     payload = {
-        "model": "mistralai/mistral-7b-instruct",  # ✅ You can change to gpt-3.5 or claude-3-haiku if needed
+        "model": "openai/gpt-3.5-turbo",  # ✅ You can change to gpt-3.5 or claude-3-haiku if needed
         "messages": [
             {"role": "system", "content": "You are a helpful microlearning tutor."},
             {"role": "user", "content": prompt}
